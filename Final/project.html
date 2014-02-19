@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Car Comparison</title>
+<link rel="stylesheet" type="text/css" href="project.css">
+<script type="text/javascript" src="http://www.cs.unc.edu/Courses/comp426-f13/jquery-1.10.2.js"></script>
+<script src="CarViewer.js"></script>
+<script src="Item.js"></script>
+<script src="detailedInfo.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Car Comparison: Side-by-Side</h2>
+		</div>
+		<div class="wrapper">
+			<!--
+			<div class="sub-header">
+				<h3>Choose your car</h3>
+			</div>
+			-->
+			<div id="info">
+				<div id="conditions">
+					<div class="chunk_header">
+						<h3 class="header_text">Find Cars</h3>
+					</div>
+					<fieldset class="form">
+						<!--<legend>Find Cars</legend>-->
+						<form id="condition_form">
+							<div class="condition-row">
+								<label>Make: </label>
+								<select id="select-make" name="make">
+									<option value="">select</option>
+									<option value="Audi">Audi</option>
+									<option value="BMW">BMW</option>
+									<option value="Mercedes">Mercedes-Benz</option>
+									<option value="Infiniti">Infiniti</option>
+									<option value="Honda">Honda</option>
+									<option value="Toyota">Toyota</option>
+									<option value="Volkswagen">Volkswagen</option>
+								</select>
+							</div>
+							<br>
+							<div class="condition-row">
+								<label>Model: </label>
+								<select id="select-model" name="model">
+								</select>
+							</div>
+							<br>
+							<div class="condition-row">
+								<label>Year: </label>
+								<select id="select-year" name="year">
+								</select>
+							</div>
+							<br>
+							<div>
+								<input type="submit" value="Add">
+							</div>
+						</form>
+					</fieldset>
+				</div>
+				<div id="results-list">
+					<div class="chunk_header">
+						<h3 class="header_text">Research List (up to 4 cars)</h3>
+					</div>
+					<div id="result-panel">
+						<!--
+						<div class="result-row">
+							<img class="logo" alt="audi_logo" src="images/audi_logo.png"/>
+							<p>2013 Audi A4 2.0T quattro 4dr Sedan</p>
+							<img class="delete" src="images/cross.png" alt="delete">
+						</div>
+						<div class="result-row">
+							<img class="logo" alt="bmw_logo" src="images/BMW_logo.jpg"/>
+							<p>2013 BMW 328i 4dr Sedan</p>
+							<img class="delete" src="images/cross.png" alt="delete">
+						</div>
+						<div class="result-row">
+							<img class="logo" alt="mercedes_logo" src="images/mercedes_logo.png"/>
+							<p>2013 Mercedes-Benz C250 Luxary 4dr Sedan</p>
+							<img class="delete" src="images/cross.png" alt="delete">
+						</div>
+						<div class="result-row">
+							<img class="logo" alt="infiniti_logo" src="images/infiniti_logo.png"/>
+							<p>2013 Infiniti G37 Journey 4dr Sedan</p>
+							<img class="delete" src="images/cross.png" alt="delete">
+						</div>
+						 -->
+					</div>
+					<div id="result-footer">
+						<button type="button" id="clear-btn">Clear</button>
+						<button type="button" id="get-btn">Get Info!</button>
+					</div>
+				</div>
+			</div>
+			<div id="compare-results">
+				<div class="chunk_header">
+					<h3 class="header_text">Compare Results</h3>
+				</div>
+				<div id="compare-region">
+					<table id="compare-table">
+						<tbody>
+							<tr id="header-row">
+								<th class="property"></th>
+
+							</tr>
+						</tbody>
+					</table>
+					<div id="comparePivotTable">
+						<div id="overview">
+							<table class="table-view">
+								<tbody>
+									<tr id="msrp">									
+										<td class="property">MSRP</td>
+
+									</tr>
+									<tr id="invoice">
+										<td class="property">Invoice</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div id="engine">
+							<table class="table-view">
+								<tbody>
+									<tr id="fuel_type">
+										<td class="property">Fuel Type</td>
+									</tr>
+									<tr id="engine_displacement">
+										<td class="property">Engine Displacement</td>
+
+									</tr>
+									<tr id="horsepower">
+										<td class="property">Horsepower</td>
+			
+									</tr>
+									<tr id=torque>
+										<td class="property">Torque</td>
+
+									</tr>
+									<tr id="mpg">
+										<td class="property">MPG(city/hwy)</td>
+		
+									</tr>
+									<tr id="fue_capacity">
+										<td class="property">Fuel Capacity</td>
+		
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						
+						<div id="transmission">
+							<table class="table-view">
+								<tbody>
+									<tr>
+										<td class="property">Transmission</td>
+	
+									</tr>									
+								</tbody>
+							</table>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<hr>
+		<p>DESIGNED BY LE ZHANG AND BO YAO. FOR COMP 426 Final Assignment.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+@CHARSET "US-ASCII";
+
+body {
+	margin: 0;
+	margin-top:0px;
+	background-color: #f2f2f2;
+	padding: 0;
+	height: 100%;
+	/* height: 1280px; */
+}
+
+body, div > p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body p, div p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h1 {
+	font-size: 36px;
+	line-hight: 50px;
+}
+
+h2 {
+	font-size: 30px;
+	line-hight: 40px;
+}
+
+h3 {
+	font-size: 24px;
+	line-hight: 40px;
+}
+
+h4 {
+	font-size: 18px;
+	line-hight: 40px;
+}
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+.container {
+	width: 1280px;
+	margin: 0px auto;
+}
+
+/*HEADER*/
+.header {
+	width: 1280px;
+	height: 50px;
+	background: #56A0D3;
+}
+
+.header > h2 {
+	color: #FFFFFF;
+	padding-top: 10px;
+	padding-left: 20px;
+	font-weight: normal;
+}
+
+/*CONTAINER*/
+.sub-header {
+	width: 900px;
+	height: 80px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+
+.wrapper {
+	width: 1100px;
+	float: left;
+	margin: 10px 80px;
+	
+}
+
+#info {
+	width: 1000px;
+	height: 300px;
+	margin: 20px 50px;
+	float: left;
+}
+
+#conditions {
+	width: 300px;
+	height: auto;
+	background: #FFFFFF;
+	float: left;
+	border-color:gray;
+	border-width:1px;
+	border-style:solid;
+}
+
+.chunk_header{
+	background: url(images/header_background.jpg)repeat-x scroll left top;
+}
+
+h3.header_text{
+	/*background: url(images/header_background.jpg)repeat-x scroll left top;*/
+	color:#FFFFFF;
+	font-weight:normal;
+	padding: 2px 10px;
+}
+
+.form {
+	padding: 10px 5px;
+	margin:0px;
+	border:none;
+}
+
+.condition-row{
+	font-size: 20px;
+}
+
+#results-list {
+	width: 620px;
+	height: auto;
+	background: #FFFFFF;
+	float: right;
+	border-style:solid;
+	border-width: 1px;
+	border-color:gray;
+}
+
+#result-title {
+	height: 50px;
+}
+
+#result-title h3 {
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+#result-panel {
+	/*background: #f2f2f2;*/
+	width: 620px;
+	height: 200px;
+	overflow: auto;
+	
+	border-style:solid;
+	border-width: 1px 0px;
+	border-color:gray;
+}
+
+.logo {
+	width: 48px;
+	height: 48px;
+	margin: 2px 5px 2px 30px;
+	float: left;
+}
+
+.delete {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	float: right;
+	margin: 15px 10px;
+	
+}
+
+.delete:hover {
+	width:20px;
+	height:20px;
+	margin:15px 10px 10px 5px;
+}
+.result-row {
+	height: 50px;
+	width: 600px;
+	border: 1px solid black;
+}
+
+
+.result-row > p {
+	float: left;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+#result-footer {
+	width: 300px;
+	height: 45px;
+	float: right;
+}
+
+#result-footer > button {
+	height: 25px;
+	width: 100px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px; 
+}
+
+#compare-results {
+	width: 1000px;
+	height: auto;
+	margin: 0px 50px 15px;
+	float: left;
+}
+
+#compare-table {
+	width: 1000px;
+	border-collapse:collapse;
+	border-spacing: 0;
+	backgound-color: #FFF;
+}
+
+#compare-row p {
+	width:150px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom:10px;
+}
+
+#compare-row th{
+	width: 200px;	
+	padding: 10px;
+}
+
+
+.compare-pic {
+	width: 150px;
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+.table-view {
+	cellspacing: 0;
+	width: 1000px;
+	border-collapse:collapse;
+	border-spacing: 0;
+	backgound-color: #FFF;
+}
+
+#compare-table th,.table-view td {
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #bec0c1;
+	padding: 8px;
+	word-break:break-all;
+	width: 200px;
+}
+
+td.property{
+	width: 134px;
+}
+#compare-row th.property{
+	width: 145px
+}
+
+ #footer{
+	margin:0 auto; 
+	width:1280px;
+	clear:both;
+	font-size: 11px;
+	color:gray;
+	text-align:center;	
+}
+
