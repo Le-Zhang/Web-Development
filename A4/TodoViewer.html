@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Todo Item Viewer</title>
+    <link rel="stylesheet" type="text/css" href="TodoViewer.css">
+    <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js" ></script> -->
+    <script type="text/javascript" src="http://www.cs.unc.edu/Courses/comp426-f13/jquery-1.10.2.js"></script>
+    <script src="TodoItem.js"></script>
+    <script src="TodoViewer.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header"><h2>My Todo List</h2></div>
+		<div class="wrapper">
+			<div id="button-panel">
+				Order by:
+				<button type="button" class="group-btn" id="sort_by_title">Title</button>
+				<button type="button" class="group-btn" id="sort_by_project">Project Name</button>
+				<button type="button" class="group-btn" id="sort_by_date">Due Date</button>
+				<button type="button" class="group-btn" id="sort_by_priority">Priority</button>
+				<button type="button" id="add-btn">Add</button>
+			</div>
+			<div id="complete-check">
+				<label>
+					<input type="checkbox" name="check-complete" value="show-incomplete" class="show-incomplete">Only show incomplete
+				</label><br>
+			</div>
+			<div id="add-panel" class="add hide">
+				<ul>
+					<li><span>Title: </span><input type="text" name="title"><span class="required">(required)</span></li>
+					<li><span>Project Name: </span><input type="text" name="project"><span class="required">(required)</span></li>
+					<li><span>Due Date: </span><input type="text" name="due_date"></li>
+					<li><span>Priority: </span>
+						<select name="priority">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						<span class="required">(required)</span>
+					</li>
+					<li><span>Complete: </span>
+						<input type="radio" name="complete" value="true"><span>Yes</span>
+						<input type="radio" name="complete" value="false"><span>No</span>
+						<span class="required">(required)</span>
+					</li>
+					<li><span>Note: </span><input type="text" name="note"></li>
+				</ul>
+				<button type="button" class="btn ok-btn">OK</button>
+			</div>
+			<div id="todolist-panel">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
